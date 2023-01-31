@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script src="particules.js" type="module" defer></script>
-    <script src="script.js" defer></script>
+    <script src="./javascript/particules.js" type="module" defer></script>
+    <script src="./javascript/script.js" defer></script>
 
 </head>
 <body>
@@ -16,18 +16,18 @@
         <nav>
             <ul id="nav-links">
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                     <span class="red-under"></span>
                     <span class="blue-under"></span>
                 </li>
                 <li>
-                    <a href="#">Work</a>
+                    <a href="#work">Work</a>
                     <span class="red-under"></span>
                     <span class="blue-under"></span>
                 </li>
                 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                     <span class="red-under"></span>
                     <span class="blue-under"></span>
                 </li>
@@ -36,11 +36,12 @@
 
         <section>
 
-            <h1>Korantin Lorillier</h1>
+            <h1 id="about">Korantin Lorillier</h1>
         
             <p>Interactive Web Developer</p>
 
-            <button>Contact</button>
+            <a href="#contact"><button>Contact</button></a>
+            
 
         </section>
 
@@ -53,7 +54,7 @@
 
         <section>
 
-            <h2>WORK</h2>
+            <h2 id="work">WORK</h2>
 
             <article class="work">
 
@@ -73,9 +74,16 @@
 
         </section>
 
-        <section>
+        
 
-            <h2>Contact</h2>
+        
+
+
+    </main>
+
+    <footer>
+
+        <h2 id="contact">Contact</h2>
 
             <form id="contact">
                 <div>
@@ -85,17 +93,7 @@
                 <input type="email" id="email" name="email" placeholder="email" required />
                 <textarea name="message" id="message"></textarea>
                 <button>Contact me</button>
-              </form>
-
-        </section>
-
-        
-
-
-    </main>
-
-    <footer>
-
+            </form>
 
     </footer>
     
